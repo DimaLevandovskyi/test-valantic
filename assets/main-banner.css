@@ -1,0 +1,48 @@
+.main-banner__wrapper{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-banner__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main-banner__content.position-left{
+    left: 0px;
+    transform: translate(0, -50%);
+    text-align: left;
+}
+
+.main-banner__content.position-left .main-banner__button{
+    margin-left: 0;
+}
+
+.main-banner__content.position-right{
+    right: 0px;
+    left: inherit;
+    transform: translate(0, -50%);
+    text-align: right;
+}
+
+.main-banner__content.position-right .main-banner__button{
+    margin-right: 0;
+}
+
+.main-banner__button{
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background: #FFFFFF;
+    color: #000000;
+}

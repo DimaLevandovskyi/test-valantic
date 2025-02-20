@@ -1,0 +1,45 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+<section class="collection-page">
+    <div class="collection-page__wrapper" data-handle="{{ collection.handle }}" data-limit="{{ section.settings.limit }}">
+        <div class="collection-page__list">
+            {%- paginate collection.products by 6 -%}
+                {% for product in collection.products %}
+                    {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: 'square',
+                        show_secondary_image: true,
+                        lazy_load: true
+                    %}
+                {% endfor %}
+            {%- endpaginate -%}
+        </div>
+        <div class="collection-page__loader">
+            <p>Loading...</p>
+        </div>
+    </div>
+</section>
+
+<script src="{{ 'collection-page.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+  {
+    "name": "PLP (infinite loader)",
+    "settings": [
+      {
+        "type": "range",
+        "id": "limit",
+        "min": 6,
+        "max": 9,
+        "step": 1,
+        "label": "Limit products",
+        "default": 6
+      },
+    ],
+    "presets": [
+      {
+        "name": "PLP (infinite loader)"
+      }
+    ]
+  }
+{% endschema %}

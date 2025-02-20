@@ -1,0 +1,255 @@
+{{ 'main-banner.css' | asset_url | stylesheet_tag }}
+
+{%- capture title_settings -%}
+    font-size: {{ section.settings.fs_title }}px;
+    font-weight: {{ section.settings.fw_title }};
+    color: {{ section.settings.cl_title }};
+{%- endcapture -%}
+
+{%- capture button_settings -%}
+    color: {{ section.settings.btn_cl }};
+    background: {{ section.settings.btn_bg }};
+{%- endcapture -%}
+
+{%- style -%}
+    .{{ section.id }}.main-banner{
+        margin-bottom: {{ section.settings.mb_desk }}px;
+        margin-top: {{ section.settings.mt_desk }}px;
+    }
+
+    .{{ section.id }} .main-banner__wrapper {
+        background-image: url({{ section.settings.img_desk | img_url: 'master' }});
+        height: {{ section.settings.max_height }}vh;
+        background-position: {{ section.settings.object_position }};
+    }
+
+    @media (max-width: 768px) {
+        {% if section.settings.img_mob != blank %}
+            .{{ section.id }} .main-banner__wrapper {
+                background-image: url({{ section.settings.img_mob | img_url: 'master' }});
+            }
+        {% endif %}
+
+        .{{ section.id }}.main-banner{
+            margin-bottom: {{ section.settings.mb_mob }}px !important;
+            margin-top: {{ section.settings.mt_mob }}px !important;
+        }
+
+        .{{ section.id }} .main-banner__title {
+            font-size: {{ section.settings.fs_title_mob }}px !important;
+        }
+    }
+{%- endstyle -%}
+
+<section class="main-banner {{ section.id }}">
+    <div class="main-banner__wrapper">
+        <div class="main-banner__content position-{{ section.settings.content_position }}">
+            {% if section.settings.title != blank %}
+                <h2 class="main-banner__title" style="{{ title_settings }}">{{ section.settings.title }}</h2>
+            {% endif %}
+            {% if section.settings.btn_txt != blank and section.settings.btn_url != blank %}
+                <a href="{{ section.settings.btn_url }}" class="main-banner__button" style="{{ button_settings }}">{{ section.settings.btn_txt }}</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Main banner",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "img_desk",
+          "label": "Image (Desktop)"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mob",
+          "label": "Image (Mobile)"
+        },
+        {
+          "type": "range",
+          "id": "max_height",
+          "min": 30,
+          "max": 100,
+          "step": 5,
+          "unit": "Vh",
+          "label": "Max height (relative to the height of the user's screen)",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "object_position",
+          "label": "Object position",
+          "info": "Positioning of a part of the image relative to the block",
+          "options": [
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+          ],
+          "default": "center"
+        },
+        {
+          "type": "header",
+          "content": "Content settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "fs_title",
+          "min": 14,
+          "max": 58,
+          "step": 2,
+          "unit": "px",
+          "label": "Font size title (Desktop)",
+          "default": 34
+        },
+        {
+          "type": "range",
+          "id": "fs_title_mob",
+          "min": 10,
+          "max": 30,
+          "step": 2,
+          "unit": "px",
+          "label": "Font size title (Mobile)",
+          "default": 18
+        },
+        {
+          "type": "select",
+          "id": "fw_title",
+          "label": "Font weight title",
+          "options": [
+            {
+              "value": "400",
+              "label": "Regular"
+            },
+            {
+              "value": "700",
+              "label": "Bold"
+            },
+          ],
+          "default": "400"
+        },
+        {
+          "type": "color",
+          "id": "cl_title",
+          "label": "Title color",
+          "default": "#000000"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button url"
+        },
+        {
+          "type": "text",
+          "id": "btn_txt",
+          "label": "Button text"
+        },
+        {
+          "type": "color",
+          "id": "btn_cl",
+          "label": "Button color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg",
+          "label": "Button background",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+          ],
+          "default": "left"
+        },
+        {
+          "type": "header",
+          "content": "Margins"
+        },
+        {
+          "type": "range",
+          "id": "mb_desk",
+          "min": 20,
+          "max": 160,
+          "step": 10,
+          "unit": "px",
+          "label": "Margin bottom (Desktop)",
+          "default": 40
+        },
+        {
+          "type": "range",
+          "id": "mt_desk",
+          "min": 0,
+          "max": 160,
+          "step": 10,
+          "unit": "px",
+          "label": "Margin top (Desktop)",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "mb_mob",
+          "min": 20,
+          "max": 160,
+          "step": 10,
+          "unit": "px",
+          "label": "Margin bottom (Desktop)",
+          "default": 40
+        },
+        {
+          "type": "range",
+          "id": "mt_mob",
+          "min": 0,
+          "max": 160,
+          "step": 10,
+          "unit": "px",
+          "label": "Margin top (Mobile)",
+          "default": 0
+        },
+    ],
+    "presets": [
+      {
+        "name": "Main banner"
+      }
+    ]
+  }
+{% endschema %}
+
