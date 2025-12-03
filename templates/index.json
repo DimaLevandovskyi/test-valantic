@@ -41,8 +41,8 @@
     "main_banner_cefniL": {
       "type": "main-banner",
       "settings": {
-        "img_desk": "shopify:\/\/shop_images\/utkarsh-website-banner-background.jpg",
-        "img_mob": "shopify:\/\/shop_images\/images.jpg",
+        "img_desk": "shopify://shop_images/utkarsh-website-banner-background.jpg",
+        "img_mob": "shopify://shop_images/images.jpg",
         "max_height": 80,
         "object_position": "center",
         "title": "Test title text",
@@ -60,10 +60,28 @@
         "mb_mob": 40,
         "mt_mob": 0
       }
+    },
+    "17647691280e5dd72a": {
+      "type": "apps",
+      "blocks": {
+        "powerful_form_builder_app_block_zT8GDF": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"MTIxODAy\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_zT8GDF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "featured_collection",
-    "main_banner_cefniL"
+    "main_banner_cefniL",
+    "17647691280e5dd72a"
   ]
 }
