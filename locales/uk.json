@@ -1423,7 +1423,31 @@
             "last_30_days": "Останні 30 днів"
           }
         }
-      }
+      },
+      "order_status": {
+        "delivery_promise": {
+          "details_modal": {
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise гарантує швидку та надійну доставку. Отримайте готівку від Shop Cash, якщо ваше замовлення прибуде із запізненням.",
+              "may_be_eligible_not_authorized_label": "Ви можете мати право на отримання готівки з магазину, оскільки це замовлення надійшло із запізненням. Увійдіть, щоб переглянути деталі.",
+              "redeemed_label": "Ви вже отримали готівку з магазину, оскільки це замовлення надійшло із запізненням.",
+              "expired_label": "Це замовлення не підлягає претензії щодо затримки доставки, оскільки 30-денна гарантія закінчилася.",
+              "no_shop_cash_label": "Це замовлення не підлягає претензії щодо затримки доставки, оскільки його не було оплачено через Shop Pay.",
+              "no_longer_guaranteed_label": "Гарантія доставки на ці товари більше не поширюється.",
+              "claim_shop_cash_title": "Відскануйте, щоб отримати {{amount}} у магазині Cash",
+              "claim_shop_cash_description": "Ви можете використовувати свої гроші з Shop Cash для майбутніх покупок у застосунку Shop."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "Позначити як доставлено",
+      "fulfillment_status_title": "Статус виконання: {{status}}",
+      "buy_again": "Купуйте знову",
+      "buy_again_accessibility_label": "Купити ще раз для замовлення {{orderId}}",
+      "manage": "Керувати",
+      "manage_accessiblity_label": "Керувати замовленням {{orderId}}",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "group_title_label_with_parent": "Для: {{groupTitle}}"
     },
     "B2B": {
       "purchase_order_number": {
@@ -1600,7 +1624,8 @@
         "return_and_refund_modal_header": "Політика повернення коштів",
         "tracking_number": "Номер відстеження:",
         "exchange_header": "Обмінні предмети",
-        "exchange_subheader": "Обмінні товари будуть додані до замовлення після завершення повернення."
+        "exchange_subheader": "Обмінні товари будуть додані до замовлення після завершення повернення.",
+        "expand_events_label": "Показати деталі"
       },
       "shipping": {
         "address": "Адреса доставки",
@@ -1680,7 +1705,122 @@
       "adjusted_total": "Скоригована сума",
       "due_on_date": "Термін виконання: {{date}}",
       "due_on_fulfillment": "Підлягає виконанню",
-      "due_on_receipt": "Оплата при отриманні"
+      "due_on_receipt": "Оплата при отриманні",
+      "shipment_timeline": {
+        "expand_events_label": "Показати деталі",
+        "expand_events_accessibility_label": "Показати деталі доставки замовлення",
+        "hide_events_label": "Приховати деталі",
+        "hide_events_accessibility_label": "Приховати деталі доставки замовлення"
+      },
+      "addresses_section_title": "Виставлення рахунків та доставка",
+      "order_details": "Деталі замовлення",
+      "order_details_skeleton_accessibility_label": "Увійдіть, щоб переглянути всі деталі замовлення.",
+      "billing_address": "Платіжна адреса",
+      "card_ending_with": "закінчується на {{lastDigits}}",
+      "contact": "Контакти",
+      "contact_information": "Контактна інформація",
+      "company": "Компанія",
+      "company_and_location": "Компанія та місцезнаходження",
+      "fully_refunded_label": "ПОВЕРТАННЯ",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "group_title_label_with_parent": "Для: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "Галерея",
+        "list": "Список"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "Показати {{count}} елементів",
+        "collapse_line_items": "Приховати {{count}} елементів",
+        "line_item_summary_list_accessibility_label": "Елементи в комплекті {{productTitle}}"
+      },
+      "discount": "Знижка",
+      "hide_items": "Приховати елементи",
+      "loading": "Завантаження деталей замовлення",
+      "loading_finished_accessibility_message": "Деталі замовлення завантажено",
+      "location": "Розташування",
+      "image_gallery": {
+        "next": "Показати наступні елементи",
+        "previous": "Показати попередні елементи",
+        "load_more_items": {
+          "one": "Завантажити ще {{count}} елементів",
+          "other": "Завантажити ще {{count}} елементів"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Показати зведення замовлення",
+        "closed": "Приховати зведення замовлення"
+      },
+      "no_data": "Жоден",
+      "no_data_provided_accessibility_label": "Поле {{fieldName}} порожнє",
+      "not_applicable": "Немає даних",
+      "paid_amount": "Платно",
+      "partially_refunded_label": "ЧАСТКОВО ВІДШКОДУВАНО",
+      "payment_confirmation": {
+        "payment_received": "Дякуємо! Ваш платіж на суму {{amount}} отримано.",
+        "full_payment_received": "Дякуємо! Ваш платіж на суму {{amount}} отримано, і це замовлення повністю оплачено.",
+        "payment_authorized": "Дякуємо! Баланс буде оновлено після отримання платежу.",
+        "dismiss_label": "Відхилити підтвердження платежу"
+      },
+      "payment": {
+        "status_in_review": "Оплата після перевірки",
+        "status_unpaid": "Оплата має бути здійснена {{date}}",
+        "title": "Оплата",
+        "payment_type": {
+          "gift_card": "Подарункова карта",
+          "store_credit": "Кредит магазину",
+          "money_order": "Грошовий переказ",
+          "cash_on_delivery": "Готівка при отриманні (POD)",
+          "bank_deposit": "Банківський депозит",
+          "manual": "Ручний"
+        },
+        "card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Кредит магазину – {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Оплачено частинами через Shop Pay",
+          "view_schedule": "Переглянути розклад"
+        },
+        "manual_payment_methods": {
+          "money_order": "Грошовий переказ - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Готівка при отриманні (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Банківський депозит – {{formattedTransactionAmount}}",
+          "manual": "Вручну – {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Показати всі",
+          "show_less": "Показати менше",
+          "details": "Деталі",
+          "payment_details": "Платіжні реквізити"
+        },
+        "emv_details": {
+          "auth": "АВТОРИЗАЦІЯ:",
+          "aid": "Ідентифікатор допомоги:",
+          "source": "ДЖЕРЕЛО:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Оплачено частинами через Shop Pay",
+        "description": "Слідкуйте за своїм графіком платежів за допомогою нагадувань у додатку Shop.",
+        "payment_reminders_button": "Отримуйте нагадування про оплату",
+        "desktop_qr_code_content": {
+          "title": "Сканувати для пошуку нагадувань",
+          "description": "Отримуйте нагадування про платежі за допомогою Shop."
+        }
+      },
+      "refunded_amount": "Повернено кошти",
+      "request_return_failed": "Виникла проблема з обробкою вашого запиту. Будь ласка, спробуйте ще раз.",
+      "login_card": {
+        "resend_link_and_login": "Щоб переглянути деталі замовлення, увійдіть у систему або надішліть нове посилання на електронну пошту чи номер телефону, які використовувалися під час оформлення замовлення.",
+        "resend_link_only": "Щоб переглянути деталі замовлення, надішліть нове посилання на електронну пошту або номер телефону, вказані під час оформлення замовлення.",
+        "log_in": "Увійти",
+        "resend_link": "Надіслати нове посилання",
+        "link_expired": "Термін дії посилання закінчився."
+      },
+      "remaining_amount": "Залишок",
+      "marketing_section_title": "Новини та пропозиції",
+      "marketing_description": "Ви отримуватимете маркетингові електронні листи. Ви можете відмовитися від підписки будь-коли.",
+      "marketing_checkbox_label": "Надсилайте мені новини та пропозиції електронною поштою",
+      "marketing_checkmark_label": "Ви підписані на отримання новин та пропозицій електронною поштою"
     },
     "addresses": {
       "add_button": "Додати адресу",
