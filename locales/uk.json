@@ -392,7 +392,67 @@
         "google": {
           "connect": "Натисніть, щоб підключитися до свого облікового запису Google Pay",
           "error_authorizing": "Помилка авторизації платежу"
-        }
+        },
+        "network_card_payment_options": "Виберіть мережу карток",
+        "network_card_persistence_description": "Вибрану мережу буде збережено разом із вашим способом оплати для майбутніх транзакцій.",
+        "amazon_payments_login_hint": "Вам буде запропоновано увійти за допомогою Amazon.",
+        "amazon_payments_logout": "Вийти з Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Вибраний спосіб оплати не вдалося використати. Виберіть інший спосіб або зверніться до свого банку чи емітента картки.",
+        "amazon_payments_abandoned_mfa_challenge": "Ваш платіж не вдалося завершити. Спробуйте інший спосіб оплати або зверніться до свого банку чи емітента картки.",
+        "amazon_payments_could_not_enqueue_authorize": "Виникла проблема з обробкою вашого платежу. Спробуйте ще раз або скористайтеся іншим способом оплати.",
+        "title": "Оплата",
+        "amount_left_to_pay_label": "Сплачено:",
+        "discount_button_action_label": "Застосувати код знижки",
+        "discount_codes_removed_summary": {
+          "one": "Код знижки %{count} видалено",
+          "other": "%{count} кодів знижок видалено"
+        },
+        "discount_show_more_warnings": {
+          "one": "Показати ще %{count}",
+          "other": "Показати ще %{count}"
+        },
+        "gift_card_code_label": "Код подарункової картки",
+        "apply_gift_card_button_label": "Застосувати",
+        "gift_card_balance_label": "Баланс:",
+        "supported_card_brands_more_label": "та більше…",
+        "detected_card_brand": "Виявлений бренд картки: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Збережіть свою кредитну картку",
+        "credit_card_vaulting_sign_in_banner_info": "Увійдіть або створіть обліковий запис, щоб зберегти дані кредитної картки для майбутніх покупок.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Увійти",
+        "ftd_vault_credit_card_label": "Збережіть цю кредитну картку в моєму обліковому записі для швидшої оплати",
+        "card_number_label": "Номер картки",
+        "card_number_placeholder": "Номер картки",
+        "card_pay_with": "Оплата за допомогою:",
+        "card_security_notice": "Усі транзакції безпечні та зашифровані.",
+        "card_security_vault_notice": "Нам потрібні ваші дані для майбутніх платежів. Усі транзакції безпечні та зашифровані.",
+        "card_information_notice": "Усі транзакції безпечні та зашифровані. Інформація про кредитну картку ніколи не зберігається.",
+        "name_on_card_label": "Ім'я на картці",
+        "name_on_card_placeholder": "Ім'я на картці",
+        "card_nickname_label": "Прізвисько (необов'язково)",
+        "card_expired": "Термін дії минув",
+        "card_expiry_label": "Термін дії (ММ / РР)",
+        "card_expiry_placeholder": "Термін дії (ММ / РР)",
+        "credit_card_start_month": "Початковий місяць",
+        "credit_card_start_year": "Рік початку",
+        "delete_customer_mandate_modal_title": "Видалити цю платіжну картку?",
+        "delete_customer_mandate_modal_body": "Якщо ви видалите цю картку, вам потрібно буде додати її знову, перш ніж використовувати її для платежів.",
+        "delete_customer_mandate_modal_confirm": "Видалити картку",
+        "delete_customer_mandate_modal_cancel": "Скасувати",
+        "card_verification_value_label": "Код безпеки",
+        "card_verification_value_placeholder": "Код безпеки",
+        "card_verification_confirm": "Для підтвердження введіть код безпеки вашої картки.",
+        "card_expiry_date_explanation": "Термін дії картки у форматі: місяць, місяць, рік, рік",
+        "card_expiration_month_label": "Місяць закінчення терміну дії",
+        "card_expiration_year_label": "Рік закінчення терміну дії",
+        "card_verification_value_explanation": "3-значний код безпеки зазвичай знаходиться на звороті картки. Картки American Express мають 4-значний код, розташований на лицьовій стороні.",
+        "card_verification_value_explanation_amex": "4-значний код безпеки на лицьовій стороні вашої картки",
+        "card_verification_value_explanation_other": "3-значний код безпеки на звороті вашої картки",
+        "card_start_label": "Дата видачі (ММ / РР)",
+        "card_start_placeholder": "Дата видачі (ММ / РР)",
+        "card_issue_number_label": "Номер випуску",
+        "card_issue_number_placeholder": "Номер випуску",
+        "card_change_label": "Зміна",
+        "card_update_label": "Оновити картку"
       },
       "thank_you": {
         "gift_card_resent_confirmation": {
@@ -1005,7 +1065,12 @@
         "local_delivery": "Місцева доставка",
         "prime_not_available": {
           "default": "Доставка Prime недоступна для вашого замовлення. Варіанти доставки оновлено."
-        }
+        },
+        "split_shipping_option_fastest": "Найшвидший",
+        "split_shipping_option_recommended": "Рекомендовано",
+        "split_shipping_option_custom": "Користувацька",
+        "add_shipping_address": "Додати адресу доставки",
+        "choose_new_address": "Виберіть нову адресу"
       },
       "order_summary": {
         "payment_terms_totals": {
@@ -1393,6 +1458,191 @@
         "action_required": "Потрібна дія",
         "modal_notice": "Ми зв'язуємося з {{paymentMethod}}",
         "remote_checkout_count": "%{current} від %{total}"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Додаткова інформація",
+          "shipping_credential_kr": "Особистий митний кодекс",
+          "shipping_credential_cn": "Ідентифікаційний номер мешканця",
+          "tax_credential_it": "Податковий код (необов'язково)",
+          "tax_email_it": "ПЕК (необов'язково)",
+          "tax_credential_co": "Седула/IVA",
+          "tax_credential_type_co": "Типо Седула",
+          "shipping_credential_co": "Седула/IVA",
+          "shipping_credential_type_co": "Типо Седула",
+          "tax_credential_cr": "Ідентифікаційний номер/RUT",
+          "shipping_credential_cr": "Ідентифікаційний номер/RUT",
+          "tax_credential_gt": "Національний податок/Інвестиційна податкова система",
+          "shipping_credential_gt": "Національний податок/Інвестиційна податкова система",
+          "tax_credential_id": "НПВП",
+          "shipping_credential_id": "НПВП",
+          "tax_credential_my": "ІПН/Реєстраційний номер",
+          "shipping_credential_my": "ІПН/Реєстраційний номер",
+          "shipping_credential_mx": "Запит на інформацію (RFC)",
+          "tax_credential_mx": "Запит на інформацію (RFC)",
+          "tax_credential_type_mx": "Фіскальний режим",
+          "tax_credential_use_mx": "Використання CFDI",
+          "tax_credential_pt": "НІФ/ІВД",
+          "shipping_credential_pt": "НІФ/ІВД",
+          "tax_credential_es": "ДНР/НІФ",
+          "shipping_credential_es": "ДНР/НІФ",
+          "shipping_credential_tw": "Національний ідентифікаційний номер/ПДВ"
+        }
+      },
+      "wallets": {
+        "redirection_notice": "Вас буде перенаправлено на сторінку {{walletName}} для завершення покупки",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} недоступний",
+            "description": "{{walletName}} був недоступний. Скористайтеся іншим способом оплати або спробуйте пізніше.",
+            "instructions": "Виникла проблема з {{walletName}} . Поверніться до магазину, щоб спробувати ще раз, або оформіть замовлення іншим способом.",
+            "unavailable_for_country": "{{walletName}} недоступний у {{countryName}} . Виберіть інший спосіб оплати, щоб завершити покупку."
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} наразі недоступний для вашого замовлення. Щоб продовжити покупку, виберіть інший спосіб оплати."
+          },
+          "generic": "Виникла проблема з {{walletName}} . Спробуйте ще раз або скористайтеся іншим способом оплати.",
+          "discount_code": "Не вдалося застосувати цей код знижки. Перегляньте свій код і спробуйте ще раз.",
+          "terminal": "Виникла проблема з {{walletName}} . Скористайтеся іншим способом оплати.",
+          "detour": {
+            "stock_problems": "Деякі товари більше недоступні. Закрийте {{walletName}} та спробуйте ще раз.",
+            "price_change": "Ціни на деякі товари змінилися. Закрийте {{walletName}} , щоб переглянути своє замовлення, і спробуйте ще раз.",
+            "queue": "Вас помістили в чергу на оформлення замовлення. Закрийте {{walletName}} , щоб продовжити.",
+            "currency_change": "Ви не можете використовувати іншу адресу з {{walletName}} . Використовуйте оригінальну адресу або спробуйте інший спосіб оплати."
+          },
+          "unsupported": {
+            "address": "Продавець не може доставити на цю адресу",
+            "wallet_is_unavailable": "{{walletName}} не можна використовувати з цією адресою. Виберіть іншу адресу або закрийте {{walletName}} , щоб завершити покупку.",
+            "postal_code": "Це місцезнаходження не підтримується"
+          },
+          "outdated": {
+            "shipping_method": "Варіанти доставки вашого замовлення змінилися. Перегляньте свій вибір.",
+            "payment_terms": "Умови оплати змінилися. Перегляньте своє замовлення."
+          },
+          "invalid": {
+            "shipping_address": "Введіть дійсну адресу доставки",
+            "billing_address": "Введіть дійсну платіжну адресу",
+            "shipping_option": "Виберіть дійсний варіант доставки",
+            "email": "Введіть дійсну електронну адресу",
+            "zone": "Введіть дійсний штат/провінцію",
+            "billing_zone": "Введіть дійсну платіжну адресу (штат/провінція)",
+            "emirate": "Введіть дійсний емірат",
+            "postal_code": "Введіть дійсний поштовий індекс",
+            "phone": "Введіть дійсний номер телефону",
+            "billing_phone": "Введіть дійсну платіжну адресу, номер телефону",
+            "reduction_code": "Введіть дійсний код знижки або подарункову карту",
+            "billing_must_match_shipping": "Має збігатися з адресою доставки",
+            "billing_zip": "Введіть дійсну платіжну адресу (поштовий індекс)"
+          },
+          "missing": {
+            "first_name": "Введіть ім'я",
+            "billing_first_name": "Введіть платіжну адресу, ім'я",
+            "last_name": "Введіть прізвище",
+            "address1": "Введіть адресу",
+            "billing_address1": "Введіть платіжну адресу",
+            "address2": "Увійти до квартири, номеру люкс тощо.",
+            "billing_address2": "Введіть платіжну адресу (квартира, номер люкс тощо).",
+            "city": "Введіть місто",
+            "billing_city": "Введіть місто платіжної адреси",
+            "province": "Виберіть штат / провінцію",
+            "billing_province": "Виберіть платіжну адресу, штат/провінцію",
+            "country": "Виберіть країну/регіон",
+            "zip": "Введіть поштовий індекс",
+            "billing_zip": "Введіть платіжну адресу, поштовий індекс",
+            "phone": "Введіть номер телефону",
+            "contact_info": "Введіть контактну інформацію"
+          },
+          "formatting": {
+            "name_contains_emojis": "Видаліть емодзі зі свого імені",
+            "postal_code_contains_emoji": "Видаліть емодзі зі свого поштового індексу",
+            "first_name_too_long": "Ім'я містить забагато літер",
+            "last_name_too_long": "Прізвище містить забагато літер",
+            "address_too_long": "Рядок адреси занадто довгий"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Ваша адреса доставки недійсна. Виберіть іншу адресу або скористайтеся новою.",
+          "processing_error_checkout_as_guest": "Виникла проблема з обробкою вашого платежу. Спробуйте ще раз або {{checkout_as_guest_link}} ."
+        },
+        "scrim": {
+          "continue_purchase_in_window": "Продовжте покупку у вікні {{walletName}}",
+          "and_return_to_checkout": "і повернутися до оформлення замовлення",
+          "cancel": "Скасувати"
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Зменште розмір нотатки до 5000 символів або менше."
+      },
+      "offsite_payment_failed": {
+        "title": "Не вдалося здійснити зовнішній платіж",
+        "payment_not_processed_title": "Оплата не вдалася",
+        "payment_not_processed_text": "Спробуйте відсканувати QR-код ще раз. Якщо це все ще не працює, повідомте наших співробітників і спробуйте інший спосіб оплати.",
+        "payment_link_expired_title": "Термін дії платіжного посилання закінчився.",
+        "payment_link_expired_text": "Спробуйте відсканувати QR-код ще раз."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Ціна подарункової картки має бути більшою за 0.",
+            "gift_card_price_must_not_exceed_limit": "Ціна подарункової картки не повинна перевищувати %{gift_card_limit}.",
+            "subtotal_limit_reached": "Досягнуто максимальної кількості позицій.",
+            "signature_mismatch": "Невідповідність підпису товару для рядка %{stable_id}."
+          }
+        }
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "На касі є лише товари, придбані віддалено. Для завершення оформлення замовлення потрібне перенаправлення до віддаленого магазину.",
+          "currency_mismatch": "Цей товар не можна додати до кошика, оскільки він з магазину, який використовує іншу валюту.",
+          "currency_mismatch_removal": "Товар було видалено з вашого кошика, оскільки він з магазину, який використовує іншу валюту.",
+          "max_remote_shops_exceeded": "Цей товар неможливо додати, оскільки у вашому кошику вже є максимальна сума з інших магазинів."
+        }
+      },
+      "units": {
+        "milligram": "мг",
+        "kilogram": "кг",
+        "milliliter": "мл",
+        "centiliter": "кл",
+        "cubic_meter": "м³",
+        "millimeter": "мм",
+        "centimeter": "см",
+        "square_meter": "м²",
+        "ounce": "унція",
+        "pound": "фунт",
+        "fluid_ounce": "рідких унцій",
+        "pint": "пт",
+        "gallon": "дівчина",
+        "inch": "в",
+        "foot": "футів",
+        "yard": "ярдів",
+        "square_foot": "фут²",
+        "item": "елемент"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Адреса не підтримується для поточного членства.",
+        "items_split_across_locations_unsupported": "Доставка Prime недоступна для вашого замовлення. Варіанти доставки оновлено."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Перейти до інтернет-магазину"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Більше інформації про %{context}",
+        "additional_payment_methods": "Додаткові способи оплати"
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Для завершення оформлення замовлення потрібна взаємодія з розширенням."
+        }
+      },
+      "taxes": {
+        "tax_details": "Додаткові податкові деталі",
+        "vat_number": {
+          "field": {
+            "label": "Номер платника ПДВ (необов'язково)",
+            "tooltip": "Перевіряє номер ПДВ та автоматично застосовує зворотне стягнення плати за замовлення, якщо це відповідає вимогам"
+          },
+          "add": "Додати номер платника ПДВ"
+        }
       }
     }
   },
