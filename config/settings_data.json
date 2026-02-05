@@ -147,9 +147,9 @@
         "disabled": false,
         "settings": {}
       },
-      "10534424223343191814": {
-        "type": "shopify://apps/custlo-customer-account-pro/blocks/app-embed/f81081fd-cd04-43ee-897a-18ef0e5d9b04",
-        "disabled": true,
+      "13786924369225772985": {
+        "type": "shopify://apps/c-hub-customer-accounts/blocks/accounts-everywhere/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
+        "disabled": false,
         "settings": {}
       }
     },
