@@ -2264,7 +2264,17 @@
       "purchase_order_number": {
         "modal_po_number_input_max_length_error": "Номери замовлень на замовлення можуть мати максимальну кількість символів {{maxLength}} .",
         "save": "Зберегти",
-        "title": "Номер замовлення на замовлення {{poNumber}}"
+        "title": "Номер замовлення на замовлення {{poNumber}}",
+        "add_accessibility_label": "Додати номер замовлення на замовлення",
+        "add_modal_title": "Додати номер замовлення на замовлення",
+        "cancel": "Скасувати",
+        "close_modal_accessibility_label": "Закрити модальне вікно номера замовлення на замовлення",
+        "discard": "Відкинути",
+        "discard_changes_modal_title": "Відхилити зміни?",
+        "edit_accessibility_label": "Редагувати номер замовлення на покупку",
+        "edit_modal_title": "Редагувати номер замовлення на покупку",
+        "empty_state": "Без номера замовлення на замовлення",
+        "modal_po_number_input_label": "Номер замовлення на замовлення"
       },
       "account_information": {
         "company_card_name_label": "Назва компанії",
@@ -2324,6 +2334,142 @@
         "title_choose_location": "Виберіть місцезнаходження",
         "clear_search": "Очистити пошук",
         "try_new_search": "Спробуйте новий пошук"
+      },
+      "addresses": {
+        "add_billing_address_button": "Додати платіжну адресу",
+        "add_billing_address_section_accessibility_label": "Додати платіжну адресу",
+        "add_shipping_address_button": "Додати адресу доставки",
+        "add_shipping_address_section_accessibility_label": "Додати адресу доставки",
+        "billing_address_card_title": "Платіжна адреса",
+        "cancel_adding_billing_address_accessibility_label": "Скасувати додавання платіжної адреси",
+        "cancel_adding_shipping_address_accessibility_label": "Скасувати додавання адреси доставки",
+        "save_new_billing_address_accessibility_label": "Зберегти платіжну адресу",
+        "save_new_shipping_address_accessibility_label": "Зберегти адресу доставки",
+        "shipping_address_card_title": "Адреса доставки"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Приховати все",
+          "show_all": "Показати всі",
+          "hide_all_accessibility_label": "Приховати всі замовлення на перевірку",
+          "show_all_accessibility_label": "Показати всі замовлення на перевірку",
+          "show_all_orders_in_review": "Показати всі замовлення на перевірку",
+          "show_less_orders_in_review": "Показати менше замовлень у відгуку",
+          "title": "Очікує на розгляд",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "У вас немає відкладених замовлень",
+            "pending_orders": {
+              "one": "У вас є {{count}} замовлення, що очікують на виконання",
+              "other": "У вас є {{count}} замовлень, що очікують на виконання"
+            },
+            "more_than_pagination_length": "У вас більше ніж {{count}} замовлень, що очікують на виконання"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "Кнопки навігації по замовленнях у перегляді"
+          }
+        },
+        "order_list_column_headers_location": "Розташування",
+        "order_list_column_headers_contact": "Контакти",
+        "order_list_column_headers_status": "Статус",
+        "removed_company_contact_tooltip": "Вилучено з компанії"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Підтверджено {{date}} із замовлення {{draftOrderName}}",
+        "loading": "Завантаження деталей замовлення",
+        "loading_finished_accessibility_message": "Деталі замовлення завантажено",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Ваш платіж прострочено на {{count}} день",
+              "other": "Ваш платіж прострочено на {{count}} днів"
+            },
+            "banner_due": {
+              "one": "Ваш платіж має бути здійснений через {{count}} день",
+              "other": "Ваш платіж має бути здійснений через {{count}} днів"
+            },
+            "banner_due_today": "Ваш платіж має бути виконано сьогодні",
+            "banner_due_today_for_multiple_fulfillments": "Оплата має відбутися сьогодні за {{count}} виконаних замовлень",
+            "banner_overdue_for_multiple_fulfillments": "Оплата за {{count}} виконаних замовлень",
+            "title": "Платіж заборгований",
+            "title_with_date": "Термін оплати: {{date}}",
+            "title_due_on_receipt": "Платіж ще не надійшов",
+            "title_due_on_fulfillment": "Оплата після виконання",
+            "description_overdue": "Ваш платіж прострочено.",
+            "description_partially_paid": "Це замовлення частково оплачено. У вас залишився залишок коштів.",
+            "description_authorized": "Кошти будуть списані з вашого способу оплати в день платежу, або ви можете сплатити зараз.",
+            "description_waiting_for_manual_payment": "Це замовлення має очікуваний платіж. Баланс буде оновлено після отримання платежу.",
+            "description_due_on_receipt": "Ви отримаєте рахунок-фактуру, коли настане термін оплати.",
+            "description_due_on_receipt_partially_paid": "Це замовлення частково оплачено. У вас є залишок коштів. Ви отримаєте рахунок-фактуру, коли настане термін оплати.",
+            "description_due_on_fulfillment": "Оплата здійснюється після виконання всіх пунктів цього замовлення.",
+            "description_due_on_fulfillment_partially_paid": "Це замовлення частково оплачено. У вас є залишок коштів. Оплата має бути здійснена після виконання всіх пунктів цього замовлення.",
+            "description_due_on_fulfillment_partially_paid_next": "Це замовлення частково оплачено. У вас залишився залишок коштів."
+          },
+          "draft": {
+            "description": "Деталі оплати визначаються після підтвердження замовлення.",
+            "title": "Платіж ще не надійшов",
+            "in_review": {
+              "description": "Платіжні деталі визначаються після підтвердження замовлення.",
+              "title": "Платіж ще не надійшов"
+            },
+            "submitted": {
+              "description": "Здійсніть оплату, щоб підтвердити це замовлення.",
+              "title": "Оплатіть для підтвердження",
+              "deposit": {
+                "title": "Строки оплати мають бути надані",
+                "due_later": "Залишок коштів нараховано на умовах {{translatedName}} та має бути сплачений до {{dueDate}} .",
+                "due_on_fulfillment": "Залишок має бути сплачений після виконання всіх пунктів цього замовлення.",
+                "due_on_receipt": "Ви отримаєте рахунок-фактуру на залишок коштів.",
+                "due_on_date": "Залишок має бути сплачений до {{dueDate}} ."
+              }
+            },
+            "deposit": {
+              "due_later": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде на умовах {{translatedName}} .",
+              "due_on_fulfillment": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено після виконання замовлення.",
+              "due_on_receipt": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено пізніше.",
+              "due_on_date": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено {{dueDate}} ."
+            }
+          },
+          "paid": {
+            "title": "Платно",
+            "title_with_date": "Оплачено {{date}}",
+            "description": "Ваше замовлення повністю оплачено."
+          },
+          "refund": {
+            "title": "Повернено кошти",
+            "title_with_date": "Повернено кошти {{date}}",
+            "description_full_refund": "Ви отримали повне відшкодування за це замовлення.",
+            "description_single_refund": "Ви отримали часткове відшкодування за це замовлення.",
+            "description_multiple_refunds": "Ви отримали часткове відшкодування за це замовлення."
+          },
+          "canceled": {
+            "title": "Платіж скасовано",
+            "description": "З вас не стягували плату."
+          },
+          "due_date": "Термін виконання: {{date}}",
+          "total_balance": "Загальний баланс",
+          "pay_now": "Сплатити зараз",
+          "pay_now_accessibility_label": "Оплатіть зараз за замовлення {{orderName}}",
+          "title": "Статус платежу"
+        },
+        "order_timeline": {
+          "expand_events_label": "Показати деталі",
+          "expand_events_accessibility_label": "Показати деталі чернетки замовлення",
+          "hide_events_label": "Приховати деталі",
+          "hide_events_accessibility_label": "Приховати деталі чернетки замовлення"
+        },
+        "subtitle": "Надіслано {{date}}",
+        "title": "Замовлення {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Цей спосіб оплати більше не буде доступний для майбутніх покупок у цьому місці.",
+          "description_with_replacement": "Видалення цього способу оплати вплине на попередньо авторизовані платежі для цього місця. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "payment_details": {
+          "order_label": "Замовлення {{name}}",
+          "draft_label": "Чернетка замовлення {{name}}"
+        }
       }
     },
     "errors": {
