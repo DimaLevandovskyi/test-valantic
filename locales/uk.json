@@ -2481,12 +2481,35 @@
           "expirable_amount_label": "Загальна сума, що закінчується",
           "expirable_amounts_info": "Суми, термін дії яких закінчується раніше, застосовуються першими під час оформлення замовлення",
           "expirable_amounts_button": "Переглянути",
-          "expired_amounts_button": "Переглянути прострочені суми"
+          "expired_amounts_button": "Переглянути прострочені суми",
+          "pagination": {
+            "load_more_label": "Завантажити більше",
+            "load_more_accessibility_label": "Завантажити більше термінів дії"
+          }
         }
       },
       "payment_delete": {
         "deleted_successfully": "Спосіб оплати успішно видалено.",
-        "loading_available_payment_methods_accessibility_label": "Завантаження доступних способів оплати"
+        "loading_available_payment_methods_accessibility_label": "Завантаження доступних способів оплати",
+        "title": "Видалити спосіб оплати",
+        "description_without_replacement": "Цей спосіб оплати більше не буде доступний для майбутніх покупок.",
+        "description_with_replacement": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. За потреби ви можете замінити його іншим способом оплати, щоб продовжувати отримувати майбутні замовлення.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Якщо ви не оберете альтернативний спосіб оплати, з цього способу оплати все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями. Вибір альтернативного способу оплати дозволить вам отримувати майбутні замовлення на підписку без перерви.",
+          "with_pending_orders": "Видалення цього способу оплати призведе до його видалення з вашого облікового запису та недоступності для майбутніх покупок. Якщо ви не оберете альтернативний спосіб оплати, з нього все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями.",
+          "with_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Цей спосіб оплати все ще стягуватиме плату за будь-які непогашені залишки за існуючими замовленнями, але ви не отримуватимете майбутні замовлення на підписку. Додайте альтернативний спосіб оплати, щоб продовжувати отримувати замовлення на підписку.",
+          "with_pending_orders": "Видалення цього способу оплати призведе до його видалення з вашого облікового запису та недоступності для майбутніх покупок. З нього все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями.",
+          "with_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Додайте альтернативний спосіб оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "payment_method_selector_placeholder": "Виберіть заміну способу оплати (необов'язково)",
+        "payment_method_selector_no_alternative_payment": "Немає методу заміни",
+        "replace_method_with_new_method_description": "Ваш {{currentPaymentMethodName}} буде видалено та замінено на ваш {{newPaymentMethodName}} .",
+        "error_when_deleting": "Вибачте, але щось пішло не так, і нам не вдалося видалити цей спосіб оплати. Будь ласка, спробуйте пізніше або оновіть сторінку.",
+        "delete_and_replace_button": "Видалити та замінити",
+        "delete_and_replace_button_accessibility_label": "Видалити {{currentPaymentMethodName}} та замінити на {{newPaymentMethodName}} ."
       },
       "add_payment_method": {
         "title": "Додати спосіб оплати",
@@ -2532,6 +2555,109 @@
       },
       "three_d_secure": {
         "verification_failed": "Ваш платіж не вдалося підтвердити. Спробуйте ще раз або скористайтеся іншим способом оплати."
+      },
+      "payment_details": {
+        "title": "Деталі способу оплати",
+        "credit_card_details_accessibility_label": "закінчується на {{lastDigits}}",
+        "billing_title": "Платіжна адреса",
+        "card_info_title": "Інформація про картку",
+        "payment_method_expiring_on": "Термін дії закінчується {{expiryDate}}",
+        "payment_method_expired_on": "Термін дії закінчився {{expiryDate}}",
+        "preauthorized_payments": "Попередньо авторизовані платежі",
+        "close_payment_modal": "Закрити",
+        "close_payment_modal_accessibility_label": "Закрити модальне вікно з інформацією про спосіб оплати",
+        "payment_method_not_found_error": "Не вдалося знайти спосіб оплати",
+        "payment_details_loading": "Завантаження даних способу оплати",
+        "pre_authorized_payments": "Попередньо авторизовані платежі",
+        "total_amount_of_subscription_line_items_left": "та ще {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "Всього товарів: {{totalItems}} , відображається {{totalItemsToDisplay}} товарів.",
+        "next_payment_due": "Наступний платіж сплачено {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Редагувати",
+        "edit_payment_method_button_accessibility_label": "Редагувати спосіб оплати, номер якого закінчується на {{lastDigits}}",
+        "loading_shop_pay": "Завантаження оплати магазину",
+        "invalid_payment_method": "Недійсний спосіб оплати",
+        "invalid_payment_method_message": "Використайте нову кредитну картку, щоб продовжувати отримувати майбутні замовлення.",
+        "replace_payment_method": "Замінити спосіб оплати",
+        "checkout_card_banner": "Цей спосіб оплати можна використовувати лише для попередньо авторизованих платежів. Він не відображатиметься під час оформлення замовлення, якщо ви ввійшли в цей магазин. ",
+        "default_checkbox": "Встановити за замовчуванням",
+        "default_checkbox_accessibility_label": "Встановити цей спосіб оплати як спосіб за замовчуванням",
+        "replace_payment_method_button": "Замінити"
+      },
+      "edit_payment_method": {
+        "title": "Редагувати спосіб оплати",
+        "save_payment_method_button": "Зберегти",
+        "cancel_edit_payment_method_button": "Скасувати",
+        "payment_method_updated_toast": "Спосіб оплати оновлено",
+        "billing_address": "Платіжна адреса",
+        "billing_address_add_new": "Додати нове",
+        "billing_address_choose_from_list": "Виберіть зі списку",
+        "future_purchases_notice": "Цей спосіб оплати буде збережено для майбутніх покупок.",
+        "generic_error": "Виникла проблема з оновленням. Спробуйте ще раз."
+      },
+      "update_payment_method": {
+        "title": "Оновити спосіб оплати",
+        "button_title": "Оновлення",
+        "billing_address": "Платіжна адреса",
+        "disclaimer": "Цей спосіб оплати буде збережено для майбутніх покупок і може бути використаний для будь-яких регулярних або відкладених покупок.",
+        "error_message": "Не вдалося оновити спосіб оплати",
+        "current": "Поточний",
+        "subscriptions_title": "Підписки",
+        "subscriptions_list_accessibility_label": "Список продуктів за передплатою",
+        "pre_orders_title": "Майбутні",
+        "pre_orders_list_accessibility_label": "Список товарів, що очікують замовлення",
+        "resources_list_accessibility_label": "Продукти передплати та продукти, що очікують замовлення, що використовують цей спосіб оплати",
+        "resources_card_scroll": "Прокрутіть, щоб переглянути більше елементів",
+        "resources_card_show_more": "Показати більше",
+        "resources_card_show_less": "Показати менше",
+        "loading_form_accessibility_message": "Завантаження форми оновлення способу оплати",
+        "loading_current_payment_method": "Завантаження поточного способу оплати",
+        "loading_digital_wallets": "Завантаження параметрів цифрового гаманця",
+        "loading_card_fields": "Завантаження полів кредитної картки",
+        "loading_resources": "Завантаження підписок та майбутніх замовлень"
+      },
+      "link_expired": {
+        "message": "Термін дії цього посилання для оновлення способу оплати закінчився.",
+        "update_message": "Термін дії цього посилання для оновлення способу оплати закінчився.",
+        "add_message": "Термін дії цього посилання для додавання способу оплати закінчився.",
+        "return_home_button": "Повернутися на головну сторінку"
+      },
+      "update_success": {
+        "title": "Спосіб оплати оновлено",
+        "done_button": "Продовжити покупки"
+      },
+      "add_success": {
+        "title": "Спосіб оплати додано",
+        "done_button": "Продовжити покупки"
+      },
+      "card_fields": {
+        "card_number_label": "Номер картки",
+        "card_number_placeholder": "Номер картки",
+        "name_on_card_label": "Ім'я на картці",
+        "name_on_card_placeholder": "Ім'я на картці",
+        "card_expiry_label": "Термін дії (ММ / РР)",
+        "card_expiry_placeholder": "Термін дії (ММ / РР)",
+        "card_verification_value_label": "Код безпеки",
+        "card_verification_value_placeholder": "Код безпеки",
+        "card_start_label": "Дата видачі (ММ / РР)",
+        "card_start_placeholder": "Дата видачі (ММ / РР)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Більше інформації",
+          "card_verification_value_explanation_amex": "4-значний код безпеки на лицьовій стороні вашої картки",
+          "card_verification_value_explanation_other": "3-значний код безпеки на звороті вашої картки",
+          "card_verification_value_explanation": "3-значний код безпеки зазвичай знаходиться на звороті картки. Картки American Express мають 4-значний код, розташований на лицьовій стороні.",
+          "card_security_notice": "Усі транзакції безпечні та зашифровані."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Введіть своє ім'я точно так, як воно написано на вашій картці",
+          "credit_card_number_invalid": "Введіть дійсний номер картки",
+          "credit_card_expiry_invalid": "Введіть термін дії дійсної картки",
+          "credit_card_verification_value_blank": "Введіть CVV або код безпеки з вашої картки"
+        },
+        "unavailable": {
+          "text": "Оплата кредитними та дебетовими картками наразі недоступна.",
+          "link_text": "Оновіть цю сторінку",
+          "suffix": "або спробуйте ще раз пізніше."
+        }
       }
     },
     "order_details": {
