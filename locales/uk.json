@@ -2221,6 +2221,55 @@
           "expirable_amounts_button": "Переглянути",
           "expired_amounts_button": "Переглянути прострочені суми"
         }
+      },
+      "payment_delete": {
+        "deleted_successfully": "Спосіб оплати успішно видалено.",
+        "loading_available_payment_methods_accessibility_label": "Завантаження доступних способів оплати"
+      },
+      "add_payment_method": {
+        "title": "Додати спосіб оплати",
+        "button_title": "Додати",
+        "payment_method_added_confirmation": "Спосіб оплати додано",
+        "missing_customer_error": "Щось пішло не так. Спробуйте ще раз або зверніться до служби підтримки.",
+        "replace_mode_warning": "Видалення цього способу оплати вплине на підписки або попередні замовлення. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення.",
+        "choose_from_list": "Виберіть зі списку",
+        "add_new_button": "Додати нове",
+        "billing_address": {
+          "title": "Платіжна адреса",
+          "add_billing_address_button": "Додати нове",
+          "add_billing_address_button_accessibility_label": "Додати нову платіжну адресу",
+          "choose_billing_address_from_list_button": "Виберіть зі списку",
+          "choose_billing_address_from_list_button_accessibility_label": "Виберіть платіжну адресу зі списку",
+          "missing_billing_address_error_message": "Будь ласка, вкажіть платіжну адресу",
+          "default_checkbox": "Встановити як спосіб оплати за замовчуванням"
+        },
+        "subscription_contracts": {
+          "title": "Використовуйте спосіб оплати для повторюваних замовлень",
+          "more_items": {
+            "one": "ще {{count}} товар",
+            "other": "Ще {{count}} товарів"
+          },
+          "product_count": {
+            "one": "{{count}} товар",
+            "other": "{{count}} товарів"
+          },
+          "product_details": "Деталі продукту",
+          "load_more": "Завантажити більше"
+        },
+        "updating_contracts": {
+          "one": "Оновлення {{count}} договору підписки...",
+          "other": "Оновлення {{count}} контрактів на підписку..."
+        },
+        "contracts_updated": {
+          "one": "Успішно оновлено {{count}} контракт на підписку",
+          "other": "Успішно оновлено {{count}} контрактів на підписку"
+        },
+        "contracts_update_failed": "Не вдалося оновити деякі контракти на підписку",
+        "subscription_contracts_updated": "Оновлено {{succeeded}} з {{total}} підписок",
+        "invalid_wallet_type_error": "Недійсний тип гаманця."
+      },
+      "three_d_secure": {
+        "verification_failed": "Ваш платіж не вдалося підтвердити. Спробуйте ще раз або скористайтеся іншим способом оплати."
       }
     },
     "order_details": {
@@ -2478,7 +2527,56 @@
       "qrCode": "QR-код",
       "addFile": "Додати файл",
       "dropzoneInvalidFileType": "Тип файлу не підтримується",
-      "dropzoneDraggedOver": "Перетягніть файл для завантаження"
+      "dropzoneDraggedOver": "Перетягніть файл для завантаження",
+      "clear": "Очистити",
+      "clipboardCopied": "Скопійовано",
+      "clipboardFailedToCopy": "Не вдалося скопіювати",
+      "closeNotification": "Закрити",
+      "expandNotification": "Переглянути більше",
+      "closeModal": "Закрити",
+      "submit": "Надіслати",
+      "processing": "Обробка…",
+      "increase": "Збільшити {{type}}",
+      "decrease": "Зменшити {{type}}",
+      "minimumReached": "Досягнуто мінімальної суми {{value}}",
+      "maximumReached": "Досягнуто максимуму {{value}}",
+      "january": "Січень",
+      "february": "Лютий",
+      "march": "Березень",
+      "april": "Квітень",
+      "may": "Травень",
+      "june": "Червень",
+      "july": "Липень",
+      "august": "Серпень",
+      "september": "Вересень",
+      "october": "Жовтень",
+      "november": "Листопад",
+      "december": "Грудень",
+      "monday": "Понеділок",
+      "tuesday": "Вівторок",
+      "wednesday": "Середа",
+      "thursday": "Четвер",
+      "friday": "П'ятниця",
+      "saturday": "Субота",
+      "sunday": "Неділя",
+      "mondayAbbreviation": "Мо",
+      "tuesdayAbbreviation": "Вт",
+      "wednesdayAbbreviation": "Ми",
+      "thursdayAbbreviation": "Чт",
+      "fridayAbbreviation": "Пт",
+      "saturdayAbbreviation": "Сб",
+      "sundayAbbreviation": "Су",
+      "showNextMonth": "Показати наступного місяця, {{month}} {{year}}",
+      "showPreviousMonth": "Показати попередній місяць, {{month}} {{year}}",
+      "rangeStart": "Початок діапазону",
+      "inRange": "У межах досяжності",
+      "rangeEnd": "Кінець діапазону",
+      "autocompleteOptionsAvailable": {
+        "one": "Доступно {{count}} товар",
+        "other": "Доступно {{count}} товарів"
+      },
+      "removeItem": "Видалити {{label}}",
+      "removeTag": "Видалити тег"
     },
     "profile_preview_bar": {
       "customize_button": "Налаштувати",
@@ -2584,6 +2682,26 @@
           "invalid_code": "Введіть правильний 6-значний код"
         }
       }
+    },
+    "payment_method_brands": {
+      "visa": "Віза",
+      "mastercard": "Мастеркард",
+      "americanexpress": "Американ Експрес",
+      "discover": "Відкрийте",
+      "dinersclub": "Дайнерс Клаб",
+      "elo": "Ело",
+      "visaelectron": "Віза Електрон",
+      "maestro": "Маестро",
+      "forbrugsforeningen": "Форбругсфоренінген",
+      "dankort": "Данкорт",
+      "hipercard": "Гіперкарта",
+      "laser": "Лазер",
+      "shoppay": "Оплата в магазині",
+      "storecredit": "Кредит магазину",
+      "bogus": "Фальшивий"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Налаштування файлів cookie"
     }
   },
   "accessibility": {
